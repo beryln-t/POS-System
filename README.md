@@ -1,8 +1,19 @@
-# React + Vite
+# POS System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problem Statement
 
-Currently, two official plugins are available:
+Jenny is the owner of a fruit shop. She wants to create a simple POS (point of sales) system that can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input line items which contain product name (Apples, Bananas etc), and quantity of items that a customer is purchasing
+- Calculate the total price of purchase
+- Store the purchase as a database record
+
+## Example use case:
+
+James would like to purchase four apples and two bananas.
+Jenny can easily input 2 line items, “apple x4 and banana x2” into the system Jenny is shown the total price of the items
+Jenny store this transaction into a database
+
+## Data Model
+
+<p align="center"><img src="https://i.imgur.com/dCs7ZV8.png" width="50%" height="50%"> </p>

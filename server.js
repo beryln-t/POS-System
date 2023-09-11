@@ -5,6 +5,9 @@ require("dotenv").config();
 require("./config/database");
 
 //define routes
+const productsRouter = require("./routes/productsRouter");
+const inventoryRouter = require("./routes/inventoryRouter");
+const transactionsRouter = require("./routes/transactionsRouter");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -14,6 +17,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "dist")));
 
 //use routes
+app.use("/api/products", productsRouter);
+app.use("/api/inventory", inventoryRouter);
+app.use("/api/transactions", transactionsRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
