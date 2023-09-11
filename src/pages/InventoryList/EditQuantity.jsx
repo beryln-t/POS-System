@@ -22,7 +22,8 @@ export default function ({ isOpen, item, onSave, onClose, initialQuantity }) {
           type="number"
           min="0"
           value={newQuantity}
-          onChange={(e) => {
+          onChange={(e) => setNewQuantity(e.target.value)}
+          onBlur={(e) => {
             const value = Math.max(0, Number(e.target.value));
             setNewQuantity(value);
           }}
