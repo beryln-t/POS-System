@@ -1,5 +1,7 @@
 # POS System
 
+Deployed at: https://pos-system.cyclic.app/
+
 ## Problem Statement
 
 Jenny is the owner of a fruit shop. She wants to create a simple POS (point of sales) system that can:
@@ -8,12 +10,16 @@ Jenny is the owner of a fruit shop. She wants to create a simple POS (point of s
 - Calculate the total price of purchase
 - Store the purchase as a database record
 
-## Example use case:
-
-James would like to purchase four apples and two bananas.
-Jenny can easily input 2 line items, “apple x4 and banana x2” into the system Jenny is shown the total price of the items
-Jenny store this transaction into a database
-
 ## Data Model
 
-<p align="center"><img src="https://i.imgur.com/dCs7ZV8.png" width="50%" height="50%"> </p>
+<p align="center"><img src="https://i.imgur.com/dCs7ZV8.png" width="70%" height="70%"> </p>
+
+## Technologies Used
+
+1. MongoDB
+2. Express.js
+3. Reacts
+4. Node.js
+5. Vite
+6. Daisy UI
+7. Tailwind CSS
