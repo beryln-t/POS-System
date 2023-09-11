@@ -1,6 +1,6 @@
 export default function ({ products, handleOnClickItem }) {
   return (
-    <div className="container bg-neutral-50 shadow-xl w-2/3 h-full overflow-hidden">
+    <div className="container bg-neutral-50 shadow-xl w-3/5 h-full overflow-hidden">
       <div className="grid grid-cols-4 gap-4 p-4 overflow-y-auto max-h-full">
         {products.map((product) => (
           <div

@@ -1,6 +1,6 @@
 export default function ({ inventory, onEditQuantity }) {
   return (
-    <div className="container flex flex-col bg-neutral-50 shadow-xl w- h-full overflow-hidden p-5">
+    <div className="container flex flex-col bg-neutral-50 shadow-xl w-10/12 h-full overflow-hidden p-5">
       <h1 className="text-xl font-black text-center my-2 underline underline-offset-8">
         Inventory
       </h1>

@@ -8,7 +8,7 @@ export default function ({
   total,
 }) {
   return (
-    <div className="container bg-neutral-50 shadow-xl w-1/3 h-full overflow-hidden">
+    <div className="container bg-neutral-50 shadow-xl w-2/5 h-full overflow-hidden">
       <div className="flex flex-col">
         <h1 className="text-xl font-black text-center my-2 underline underline-offset-8">
           Shopping Cart
@@ -95,7 +95,7 @@ export default function ({
       </div>
       <div className="divider"></div>
 
-      <div className="flex justify-end pr-4 mr-4 mt-6 text-xl font-black">
+      <div className="flex justify-end pr-4 mr-2 mt-6 text-2xl font-black">
         Total:
         {total.toLocaleString("en-US", {
           style: "currency",
@@ -103,10 +103,10 @@ export default function ({
         })}
       </div>
       <div className="flex justify-end mt-6 pr-4 text-xl font-black gap-x-4">
-        <button className="btn btn-sm btn-success" onClick={handleSave}>
+        <button className="btn btn-md btn-success" onClick={handleSave}>
           Checkout
         </button>
-        <button className="btn btn-sm btn-error" onClick={handleCancel}>
+        <button className="btn btn-md btn-error" onClick={handleCancel}>
           Cancel
         </button>
       </div>
