@@ -24,3 +24,7 @@ app.use("/api/transactions", transactionsRouter);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
